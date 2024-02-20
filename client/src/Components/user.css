@@ -1,0 +1,32 @@
+.userlist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.send{
+    padding: 1rem 4rem;
+    width: 224px;
+    background-color: #84DCC6;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+}
+

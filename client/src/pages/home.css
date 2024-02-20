@@ -1,0 +1,142 @@
+.home{
+  
+    height: 100%;
+}
+.hero{
+    background-color: #222;
+    width:100%;
+    height: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.left{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    height: 30%;
+    color: white;
+    font-weight: 700
+}
+.text h1{
+    margin-bottom: 2rem;
+    font-size: 40px;
+}
+.text h3{
+    font-weight: 400;
+    font-size: 24px;
+    width: 80%;
+    letter-spacing: 2px;
+    margin-bottom: 5rem;
+}
+.hero button{
+    padding: 1rem;
+    width: 30%;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(#84DCC6,#ADEFB3,#94BA76);
+    transition: 0.3s all ease-in;
+    opacity: 0.8;
+    color: white;
+}
+button:hover{
+    scale: 1.1;
+    opacity: 1;
+    color: white;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
+
+@media screen and (max-width:768px){
+    .hero{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left h1{
+        font-size: 30px;
+        text-align: center;
+    
+    }
+    .left h3{
+        font-size: 16px;
+        width: 80%;
+        margin-bottom: 2rem;
+        
+    }
+    .right{
+        scale: 0.6;
+        flex-direction: column;
+        align-items: center;
+        height: 50%;
+    }
+}
+.carousel{
+    /* background-color: red; */
+    width: 100vw;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding:2rem 1rem;
+    overflow: hidden;
+}
+.container{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5rem;
+  gap: 80px;
+  flex-shrink: 0;
+  opacity: .5;
+  white-space: nowrap;
+  user-select:none;
+  animation: scrollX 20s linear infinite;
+}
+.trust{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+}
+.company{
+    width: 5%;
+    user-select: none;
+    aspect-ratio: 1/1;
+}
+@keyframes scrollX {
+    0%{
+      transform: translate(0);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+  }

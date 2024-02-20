@@ -1,0 +1,82 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+span{
+    color: #84DCC6;
+}
+nav{
+    background-color: transparent;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    padding-left: 5rem;
+    padding-right: 9rem;
+    position: fixed;
+    top: 0;
+    /* border-bottom: 1px solid #84DCC6;     */
+}
+
+.logo{
+    width: fit-content;
+}
+.logo h1{
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.mid{
+    width: fit-content;
+    display: flex;
+    gap: 3rem;
+}
+.login{
+   width: fit-content;
+   font-size:1.2rem ; 
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    background-color: #84DCC6;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    height: 1px;
+    transition: 0.3s all ease-in-out;
+}
+nav a:hover{
+    color: #84DCC6;
+}
+nav a:hover::after{
+    width: 100%;
+    
+}
+.login a{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+@media screen and (max-width:768px) {
+    .mid{
+        display: none;
+    }
+    .logo h1{ font-size: 16px;}
+    nav{
+        padding: 1.5rem;
+        /* padding-right:8rem; */
+       width: 100vw;
+    }
+    .login a{
+        font-size: 12px;
+    }
+}
